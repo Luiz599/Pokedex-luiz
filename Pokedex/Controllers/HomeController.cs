@@ -19,10 +19,14 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+<<<<<<< HEAD
         var pokemons = _db.Pokemons
             .Include(p => p.Tipos)
             .ThenInclude(pt => pt.Tipo)
             .ToList();
+=======
+        var pokemons = _db.Pokemons.Include(p => p.Tipos).ThenInclude(pt => pt.Tipo).ToList();
+>>>>>>> dcefb029732002a8cf9409544e2d56bc3a1a650e
         return View(pokemons);
     }
 

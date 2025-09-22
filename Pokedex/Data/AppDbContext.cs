@@ -8,18 +8,16 @@ namespace Pokedex.Data
         public AppDbContext(DbContextOptions<AppDbContext> opt) : base(opt)
         {
         }
-
         public DbSet<Genero> Generos { get; set; }
-
         public DbSet<Pokemon> Pokemons { get; set; }
-
         public DbSet<PokemonTipo> PokemonTipos { get; set; }
-
         public DbSet<Regiao> Regioes { get; set; }
-
         public DbSet<Tipo> Tipos { get; set; }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> dcefb029732002a8cf9409544e2d56bc3a1a650e
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
